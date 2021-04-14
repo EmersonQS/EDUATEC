@@ -1,0 +1,27 @@
+
+.page-header{
+	margin-left: 150px;
+}
+.col{
+	background: #DBF7F0;
+}
+body{
+background: #ECEFF0;
+
+}
+.col1{
+	background: white;
+	margin-left: 150px;
+}
+.col2{
+
+ margin-left: 50px;
+	height: 300px;
+	background: white;
+}
+.letra{
+	margin-left: 20px;
+}
+.col a img {
+	margin-top: 20px;
+}
