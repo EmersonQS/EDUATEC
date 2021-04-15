@@ -1,6 +1,6 @@
 
 .page-header{
-	margin-left: 150px;
+	margin-left: 200px;
 }
 .col{
 	background: #DBF7F0;
@@ -11,7 +11,7 @@ background: #ECEFF0;
 }
 .col1{
 	background: white;
-	margin-left: 150px;
+	margin-left: 300px;
 }
 .col2{
 
@@ -22,6 +22,9 @@ background: #ECEFF0;
 .letra{
 	margin-left: 20px;
 }
-.col a img {
-	margin-top: 20px;
+
+.col1 img{
+
+margin: 2rem auto 0;
+    display: block;
 }
