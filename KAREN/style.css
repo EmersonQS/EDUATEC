@@ -1,3 +1,13 @@
+body {
+        background-color: #49636F  ;
+        background-color: #000217  ;
+        color: #FEFEFE;
+        }
+div .footer_logo{
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(186,187,200,.3);
+}
+
 @font-face {
   font-family: 'icomoon';
   src:  url('fonts/icomoon.eot?wufhrl');
@@ -34,3 +44,9 @@
 .icon-last:before {
   content: "\ea22";
 }
+
+ .wrapper .title{
+    font-weight: 700;
+    font-size: 24px;
+    color: #000217;
+  }
