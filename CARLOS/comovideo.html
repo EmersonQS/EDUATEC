@@ -31,6 +31,9 @@
 
       <!-- link nuevos eduatec -->
       <link rel="stylesheet" href="css/estilos.css">
+      <link rel="stylesheet" href="css/button.css">
+      <link rel="stylesheet" href="css/parrafo.css">
+      <link rel="stylesheet" href="css/caja_comentario.css">
       <script type="text/javascript" src="js/comentario.js"></script>
       <!-- Lesson page specific styles are here -->
       <style type="text/css">
@@ -132,7 +135,7 @@
                 </div>
 
 
-                <div class="col-lg-3  order-md-2 course_col" id = "lesson_list_area">
+                <div class="col-lg-3 order-md-2 course_col color_contenedor" id = "lesson_list_area">
                     <div class="text-center" style="margin: 12px 10px;">
 
                       <div class="container height-100 d-flex justify-content-center align-items-center">
@@ -168,15 +171,195 @@
                         <input type="radio" id="tabfree" name="mytabs" checked="checked">
                         <label for="tabfree">APORTE</label>
                         <div class="tab">
-                          <h2>APORTE</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </br>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-3 fuentes">
+                                <p class="fuente">Ordenado por:</p>
+                              </div>
+                              <div  class="col-3">
+                                <button
+                                type="button" class="btn btn-primary button">Mas votados</button>
+                              </div>
+                              <div style="margin-right: -10px;" class="col-3">
+                                <button 
+                                type="button" class="btn btn-primary button">Nuevos</button>
+                              </div>
+                              <div style="margin-right: -50px;"class="col-3">
+                                <button 
+                                type="button" class="btn btn-primary button">Sin Responder</button>
+                              </div>
+                            </div>
+                          </div>
+
+                           <!-- Contenedor Principal -->
+  <div class="comments-container">
+    <h1>Comentarios <a href="http://creaticode.com">creaticode.com</a></h1>
+
+    <ul id="comments-list" class="comments-list">
+      <li>
+        <div class="comment-main-level">
+          <!-- Avatar -->
+          <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+          <!-- Contenedor del Comentario -->
+          <div class="comment-box">
+            <div class="comment-head">
+              <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
+              <span>hace 20 minutos</span>
+              <i class="fa fa-reply"></i>
+              <i class="fa fa-heart"></i>
+            </div>
+            <div class="comment-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+            </div>
+          </div>
+        </div>
+        <!-- Respuestas de los comentarios -->
+        <ul class="comments-list reply-list">
+          <li>
+            <!-- Avatar -->
+            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+            <!-- Contenedor del Comentario -->
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena Rojero</a></h6>
+                <span>hace 10 minutos</span>
+                <i class="fa fa-reply"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <!-- Avatar -->
+            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+            <!-- Contenedor del Comentario -->
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
+                <span>hace 10 minutos</span>
+                <i class="fa fa-reply"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="comment-main-level">
+          <!-- Avatar -->
+          <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+          <!-- Contenedor del Comentario -->
+          <div class="comment-box">
+            <div class="comment-head">
+              <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena Rojero</a></h6>
+              <span>hace 10 minutos</span>
+              <i class="fa fa-reply"></i>
+              <i class="fa fa-heart"></i>
+            </div>
+            <div class="comment-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
                         </div>
                     
                         <input type="radio" id="tabsilver" name="mytabs">
                         <label for="tabsilver">PREGUNTAS</label>
                         <div class="tab">
-                          <h2>PREGUNTAS</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                          <!-- Contenedor Principal -->
+  <div class="comments-container">
+    <h1>Comentarios <a href="http://creaticode.com">creaticode.com</a></h1>
+
+    <ul id="comments-list" class="comments-list">
+      <li>
+        <div class="comment-main-level">
+          <!-- Avatar -->
+          <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+          <!-- Contenedor del Comentario -->
+          <div class="comment-box">
+            <div class="comment-head">
+              <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
+              <span>hace 20 minutos</span>
+              <i class="fa fa-reply"></i>
+              <i class="fa fa-heart"></i>
+            </div>
+            <div class="comment-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+            </div>
+          </div>
+        </div>
+        <!-- Respuestas de los comentarios -->
+        <ul class="comments-list reply-list">
+          <li>
+            <!-- Avatar -->
+            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+            <!-- Contenedor del Comentario -->
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena Rojero</a></h6>
+                <span>hace 10 minutos</span>
+                <i class="fa fa-reply"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <!-- Avatar -->
+            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+            <!-- Contenedor del Comentario -->
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
+                <span>hace 10 minutos</span>
+                <i class="fa fa-reply"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="comment-main-level">
+          <!-- Avatar -->
+          <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+          <!-- Contenedor del Comentario -->
+          <div class="comment-box">
+            <div class="comment-head">
+              <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena Rojero</a></h6>
+              <span>hace 10 minutos</span>
+              <i class="fa fa-reply"></i>
+              <i class="fa fa-heart"></i>
+            </div>
+            <div class="comment-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+                          
                         </div>
                     
                     

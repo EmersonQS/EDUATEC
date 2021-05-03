@@ -1,0 +1,18 @@
+.button {
+    background-color: #24385b;
+    padding: 3px 8px;
+    margin: 0 .5rem .5rem 0;
+    border: none;
+    border-radius: 12px;
+    color: #33b1ff;
+    font-size: .5rem;
+    line-height: 1.125rem;
+    letter-spacing: .25px;
+    text-transform: capitalize;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    transition: all .3s ease;
+}
