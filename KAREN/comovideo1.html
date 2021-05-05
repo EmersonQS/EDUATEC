@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Cómo aprender curso Python para principiantes | EduaTec</title>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ediatec" />
+
+    <link rel="icon" type="image/png" href="https://eduatec.com/img/iconos/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="https://eduatec.com/img/iconos/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="https://eduatec.com/img/iconos/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://eduatec.com/img/iconos/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="https://eduatec.com/img/iconos/favicon-128.png" sizes="128x128" />
+    <link rel="favicon" href="https://eduatec.com/assets/frontend/default/img/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="https://eduatec.com/assets/frontend/default/img/icons/icon.png">
+    <link rel="stylesheet" href="https://eduatec.com/assets/frontend/default/css/jquery.webui-popover.min.css">
+    <link rel="stylesheet" href="https://eduatec.com/assets/frontend/default/css/select2.min.css">
+    <link rel="stylesheet" href="https://eduatec.com/assets/frontend/default/css/slick.css">
+    <link rel="stylesheet" href="https://eduatec.com/assets/frontend/default/css/slick-theme.css">
+    <!-- font awesome 5 -->
+    <link rel="stylesheet" href="https://eduatec.com/assets/frontend/default/css/fontawesome-all.min.css">
+
+    <link rel="stylesheet" href="https://eduatec.com/assets/frontend/default/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://eduatec.com/assets/frontend/default/css/bootstrap-tagsinput.css">
+    <link rel="stylesheet" href="https://eduatec.com/assets/frontend/default/css/main.css">
+    <link rel="stylesheet" href="https://eduatec.com/assets/frontend/default/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://eduatec.com/assets/global/toastr/toastr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nestable2/1.6.0/jquery.nestable.min.css" />
+    <link rel="stylesheet" href="https://eduatec.com/assets/lessons/css/custom.css">
+    <script src="https://eduatec.com/assets/backend/js/jquery-3.3.1.min.js"></script>
+
+    <!-- Lesson page specific styles are here -->
+    <style type="text/css">
+        body {
+            background-color: #4118a1;
+            color: rgb(247, 239, 239);
+            font-family: 'Open Sans',
+        }
+        
+        .card {
+            border-radius: 0px !important;
+            background-color: #000217 !important;
+            border: 0px !important;
+        }
+        
+        .car-body {
+            background-color: #000217 !important;
+            color: #343a40;
+        }
+        
+        .course_card {
+            padding: 0px;
+            background-color: #000217;
+        }
+        
+        .course_container {
+            background-color: #000217 !important;
+        }
+        
+        .course_col {
+            padding: 0px;
+        }
+        
+        .course_header_col {
+            background-color: #000217;
+            color: #343a40;
+            padding: 15px 10px 10px;
+        }
+        
+        .course_header_col img {
+            padding: 0px 0px;
+        }
+        
+        .course_btn {
+            color: #050505;
+            border: 1px solid #ffffff;
+            padding: 7px 10px;
+        }
+        
+        .course_btn:hover {
+            color: #343a40;
+            border: 1px solid #fff;
+        }
+        
+        .lesson_durationss {
+            border-radius: 5px;
+            padding-top: 8px;
+            color: #5C5D61;
+            font-size: 13px;
+            font-weight: 100;
+        }
+        
+        .quiz-card {
+            border: 1px solid #dcdddf !important;
+        }
+        
+        .bg-quiz-result-info {
+            background-color: #007791 !important;
+            padding: 13px !important;
+        }
+        
+        .nav-tabs {
+            background: #000217 !important;
+            border-bottom: 1px solid #000217;
+            color: #F7F9FA;
+        }
+        
+        .btn-group {
+            background-color: #1192ee;
+            margin: 8 .0rem .5rem 0;
+            border: none;
+            padding: 8px;
+            font-size: 8px;
+            border-radius: 12px;
+        }
+        
+        .btn {
+            text-decoration: none;
+            padding: 8px;
+            font-size: 8px;
+            border-radius: 12px;
+            color: black;
+        }
+        
+        .btn-primary {
+            background-color: #007bff;
+            color: black;
+        }
+        
+        .body.gray-bg {
+            background-color: #090808;
+        }
+        
+        .nav.link {
+            background: #000217;
+            border-bottom: 1px solid #000217;
+            color: #343a40;
+        }
+        
+        .nav-pills {
+            color: #007bff;
+            padding: 8px;
+            font-size: 8px;
+        }
+    </style>
+</head>
+
+<body class="gray-bg">
+
+    <div class="container-fluid course_container">
+        <!-- Top bar -->
+        <div class="row">
+            <div class="col-lg-9 course_header_col">
+                <h5>
+                    <img src="https://eduatec.com/img/iconos/apple-touch-icon-57x57.png" height="35"> | Python curso para principiantes
+                </h5>
+            </div>
+            <div class="col-lg-3 course_header_col">
+                <a href="javascript::" class="course_btn" onclick="toggle_lesson_view()"><i
+                        class="fa fa-arrows-alt-h"></i></a>
+                <a href="https://eduatec.com/my_courses" class="course_btn"> <i class="fa fa-chevron-left"></i> Mis cursos
+                </a>
+                <a href="https://eduatec.com/course-detail/como-grabar-videos-de-tecnologia-cinematografica-como-apple" class="course_btn">Detalle del curso <i class="fa fa-chevron-right"></i></a>
+            </div>
+        </div>
+
+        <div class="row" id="lesson-container">
+            <!-- Course content, video, quizes, files starts-->
+            <div class="col-lg-9  order-md-1 course_col" id="video_player_area">
+                <!-- <div class="" style="background-color: #333;"> -->
+                <div class="" style="text-align: center;">
+
+                    <!-- If the video is youtube video -->
+                    <!------------- PLYR.IO ------------>
+                    <link rel="stylesheet" href="https://eduatec.com/assets/global/plyr/plyr.css">
+
+                    <div class="plyr__video-embed" id="player">
+                        <iframe height="500" src="https://www.youtube.com/watch?v=chPhlsHoEPo&t=4s&ab_channel=Fazt?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency
+                            allow="autoplay"></iframe>
+                    </div>
+
+                    <script src="https://eduatec.com/assets/global/plyr/plyr.js"></script>
+                    <script>
+                        const player = new Plyr('#player');
+                    </script>
+                    <!------------- PLYR.IO ------------>
+
+                    <!-- If the video is vimeo video -->
+                </div>
+
+                <div class="" style="margin: 20px 0;" id="lesson-summary">
+                    <div class="row">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <h5 class="card-title">Curso Python </h5>
+                            <img src="img\diego-degranda.png" class="rounded-circle" width="50" alt=""> Diego De Granda
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button class="btn btn btn-primary" type="button" arial-label="Clase anterior"><svg
+                                        aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-to-left"
+                                        class="svg-inline--fa fa-arrow-to-left fa-w-14 " role="img"
+                                        viewBox="0 0 700 400">
+                                        <path fill="currentColor"
+                                            d="M249.9 412.5l-148.4-148c-4.7-4.7-4.7-12.3 0-17l148.4-148c4.7-4.7 12.3-4.7 17 0l19.6 19.6c4.8 4.8 4.7 12.5-.2 17.1L187.2 230H436c6.6 0 12 5.4 12 12v28c0 6.6-5.4 12-12 12H187.2l97.1 93.7c4.8 4.7 4.9 12.4.2 17.1l-19.6 19.6c-4.7 4.8-12.3 4.8-17 .1zM50 436V76c0-6.6-5.4-12-12-12H12C5.4 64 0 69.4 0 76v360c0 6.6 5.4 12 12 12h28c6.6 0 12-5.4 12-12z">
+                                        </path>
+                                    </svg>
+                                    <div class="Header-tooltip">
+                                        <p>Frontend</p>
+                                    </div>
+                                    <button type="button" class="btn btn-primary" type="button"
+                                        arial-label="Fullstack"><svg aria-hidden="true" focusable="false"
+                                            data-prefix="far" data-icon="arrow-to-right"
+                                            class="svg-inline--fa fa-arrow-to-right fa-w-14 " role="img"
+                                            viewBox="0 0 800 400">
+                                            <path fill="currentColor"
+                                                d="M200.1 99.5l148.4 148c4.7 4.7 4.7 12.3 0 17l-148.4 148c-4.7 4.7-12.3 4.7-17 0l-19.6-19.6c-4.8-4.8-4.7-12.5.2-17.1l97.1-93.7H12c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h248.8l-97.1-93.7c-4.8-4.7-4.9-12.4-.2-17.1l19.6-19.6c4.7-4.9 12.3-4.9 17-.2zM396 76v360c0 6.6 5.4 12 12 12h28c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12h-28c-6.6 0-12 5.4-12 12z">
+                                            </path>
+                                        </svg>
+                                        <div class="Header-tooltip">Fullstack
+                                    </button>
+                            </div>
+                            </button><span class="OrderBy-text">
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="Temario"
+                                data-toggle="Temario" aria-haspopup="true" aria-expanded="false">
+                                Temario</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="Header-class-title">
+                        <div class="card-body">
+                            <h6 class="card-title">Curso Práctico de Python 2
+                                <!-- -->/
+                                <!-- -->55
+                            </h6>
+                            <!-- TABLA DEL CURSO-->
+                        </div>
+                        </div>
+                        <div class="row" style="margin: 12px -1px">
+                            <div class="col-12">
+                                <ul class="nav nav-tabs" id="lessonTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="RECURSOS-tab" data-toggle="tab" href="#RECURSOS"
+                                            role="tab" aria-controls="Recursos" aria-selected="false"
+                                            onclick="checkRecursosEligibility()">Recursos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="MARCADORES-tab" data-toggle="tab" href="#MARCADORES"
+                                            role="tab" aria-controls="marcadores" aria-selected="false"
+                                            onclick="checkMarcadoresEligibility()">Marcadores</a>
+                                    </li>
+                                    </nav>
+                                    </ul>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show" id="RECURSOS" role="tabpanel"
+                                            aria-labelledby="nav-recursos-tab"> Los conocimientos de Python, es
+                                            ampliamente utilizado por empresas de todo el mundo para construir
+                                            aplicaciones web, analizar datos, automatizar operaciones y crear
+                                            aplicaciones empresariales fiables y escalables.</div>
+                                        <div class="tab-pane fade show" id="MARCADORES" role="tabpanel"
+                                            aria-labelledby="nav-marcadores-tab">Curso en casa.</div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="" style="margin: 20px 0;" id="lesson-summary">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title"> Ver por:</h6>
+                            </div>
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active" id="pills-Tiempo-tab" data-bs-toggle="pill" data-bs-target="#pills-Tiempo" type="button" role="tab" aria-controls="pills-tiempo" aria-selected="true">Tiempo</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-Texto-tab" data-bs-toggle="pill" data-bs-target="#pills-Texto" type="button" role="tab" aria-controls="pills-Texto" aria-selected="false">Texto</button>
+                                      </li>
+                                      </ul>
+                                      <div class="tab-content" id="pills-tabContent">
+                                          <div class="tab-pane fade show active" id="pills-Tiempo" role="tabpanel" aria-labelledby="pills-Tiempo-tab"> 00:51 Seruna arty con y dentro del Ártico vamos a tener un Ancor que va ir cuando se Clique al </div>
+                                          <div class="tab-pane fade show active" id="pills-Texto" role="tabpanel" aria-labelledby="pills-Texto-tab"> Curso Python </div>
+                                </div>
+                                 </div>
+                                </div>
+
+                        
+                        <!-- Course content, video, quizes, files ends-->
+                        <!-- Course sections and lesson selector sidebar starts-->
+                        <div class="col-lg-3 mt-5 order-md-2 course_col hidden" id="lesson_list_loader" style="text-align: center;">
+                            <img src="https://eduatec.com/assets/backend/images/loader.gif" alt="" height="50" width="50">
+                        </div>
+                        <div class="col-lg-3  order-md-2 course_col" id="lesson_list_area">
+                            <div class="text-center" style="margin: 12px 10px;">
+                                <h5>Contenido del curso</h5>
+                            </div>
+                            <div class="row" style="margin: 12px -1px">
+                                <div class="col-12">
+                                    <ul class="nav nav-tabs" id="lessonTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="section_and_lessons-tab" data-toggle="tab" href="#section_and_lessons" role="tab" aria-controls="section_and_lessons" aria-selected="true">Lecciones</a>
+                                        </li>
+                                        <!-- ZOOM LIVE CLASS TAB STARTS -->
+                                        <!--  -->
+                                        <!-- <li class="nav-item">
+                        <a class="nav-link" id="liveclass-tab" data-toggle="tab" href="#liveclass" role="tab" aria-controls="liveclass" aria-selected="false">
+                           clase en vivo
+                        </a>
+                    </li> -->
+                                        <!--   -->
+                                        <!-- ZOOM LIVE CLASS TAB ENDS -->
+
+                                        <!-- CERTIFICATE TAB -->
+                                        <!--  -->
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="certificate-tab" data-toggle="tab" href="#certificate" role="tab" aria-controls="certificate" aria-selected="false" onclick="checkCertificateEligibility()">Certificado</a>
+                                        </li>
+                                        <!--  -->
+                                        <!-- CERTIFICATE TAB -->
+                                    </ul>
+                                    <div class="tab-content" id="lessonTabContent">
+                                        <div class="tab-pane fade show active" id="section_and_lessons" role="tabpanel" aria-labelledby="section_and_lessons-tab">
+                                            <!-- Lesson Content starts from here -->
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="card" style="margin:0px 0px;">
+                                                    <div class="card-header course_card" id="heading-28">
+
+                                                        <h5 class="mb-0">
+                                                            <button class="btn btn-link w-100 text-left" type="button" data-toggle="collapse" data-target="#collapse-28" aria-expanded="true" aria-controls="collapse-28" style="color: #535a66; background: none; border: none; white-space: normal;" onclick="toggleAccordionIcon(this, '28')">
+                                                                                        <h6
+                                                                                            style="color: #959aa2; font-size: 13px;">
+                                                                                            Sección 1 <span
+                                                                                                style="float: right; font-weight: 100;"
+                                                                                                class="accordion_icon"
+                                                                                                id="accordion_icon_28">
+                                                                                                <i
+                                                                                                    class="fa fa-minus"></i>
+                                                                                            </span>
+                            </h6>
+                            Introducción
+                            </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapse-28" class="collapse show" aria-labelledby="heading-28" data-parent="#accordionExample">
+                            <div class="card-body" style="padding:0px;">
+                                <table style="width: 100%;">
+
+                                    <tr style="width: 100%; padding: 5px 0px;background-color: #E6F2F5;">
+                                        <td style="text-align: left; padding:7px 10px;">
+                                            <div class="form-group">
+                                                <input type="checkbox" id="46" onchange="markThisLessonAsCompleted(this.id);" value=1 checked>
+                                                <label for="46"></label>
+                                            </div>
+
+                                            <a href="https://eduatec.com/lesson/como-grabar-videos-de-tecnologia-cinematografica-como-apple/46" id="46" style="color: #444549;font-size: 14px;font-weight: 400;">
+                                                                                                    1:
+                                                                                                    Obtenga cámaras como
+                                                                                                    Marques </a>
+
+                                            <div class="lesson_durationss">
+                                                <i class="far fa-play-circle"></i> 03 hr 15 min
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lesson Content ends from here -->
+            </div>
+
+            <!-- ZOOM LIVE CLASS TAB STARTS-->
+            <!--  -->
+            <!-- <div class="tab-pane fade" id="liveclass" role="tabpanel" aria-labelledby="liveclass-tab" style="text-align: center;">
+                                                    <div style="padding: 30px 0px;">
+                                <i class="fa fa-calendar-check"></i>                                 <h5 style="margin-top: 20px;"></h5>
+                                <div class="live_class_note">
+                                                                    </div>
+                                <a href="" class="btn btn_zoom">
+                                    <i class="fa fa-video"></i>&nbsp;
+                                   unirse a la clase de video en vivo
+                                </a>
+                            </div>
+                                                    <div class="alert alert-warning" role="alert" style="padding: 30px 0px;">
+                              la clase en vivo aún no está programada para este curso
+                            </div>
+                                            </div> -->
+
+            <style>
+                .live_class_note {
+                    border: 1px solid #bfdde4;
+                    background-color: aliceblue;
+                    margin: 30px 0px 10px;
+                    color: #007791;
+                    font-size: 12px;
+                    padding: 10px;
+                }
+                
+                .btn_zoom {
+                    background-color: #2781FF;
+                    border-color: #2781FF;
+                }
+                
+                .btn_zoom:hover {
+                    background-color: #2781FF;
+                    border-color: #2781FF;
+                }
+                
+                .btn_zoom:focus {
+                    background-color: #2781FF;
+                    border-color: #2781FF;
+                }
+            </style>
+            <!-- ZOOM LIVE CLASS TAB ENDS-->
+            <link rel="stylesheet" href="https://eduatec.com/assets/frontend/default/css/progress-circle.min.css">
+            <div class="tab-pane fade" id="certificate" role="tabpanel" aria-labelledby="certificate-tab" style="text-align: center;">
+
+                <div class="circular-progressdiv" id="course_progress_area" data-percent="100">
+
+                </div>
+
+                <div class="alert alert-info" id="certificate-alert-warning" role="alert">
+                    <h4 class="alert-heading">Aviso</h4>
+                    <hr>
+                    <p> Has completado <span id="progression"></span>% del curso </p>
+                    <p>Puede descargar el certificado de finalización del curso después de completar el curso</p>
+                </div>
+
+                <div class="alert alert-success" id="certificate-alert-success" role="alert">
+                    <h4 class="alert-heading">Bien hecho</h4>
+                    <hr>
+                    <p>Felicidades!!!</p>
+                    <p>ahora es elegible para descargar el certificado de finalización del curso.</p>
+                </div>
+
+                <div id="download_certificate_area" style="padding: 15px;">
+                    <a href="javascript:void(0)" onclick="getCertificateShareableUrl()" class="btn btn-primary" id="certificate_download_btn">obtener
+                                                                            certificado</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            checkCertificateEligibility();
+        });
+
+        function toggleAccordionIcon(elem, section_id) {
+            var accordion_section_ids = [];
+            $(".accordion_icon").each(function() {
+                accordion_section_ids.push(this.id);
+            });
+            accordion_section_ids.forEach(function(item) {
+                if (item === 'accordion_icon_' + section_id) {
+                    if ($('#' + item).html().trim() === '<i class="fa fa-plus"></i>') {
+                        $('#' + item).html('<i class="fa fa-minus"></i>')
+                    } else {
+                        $('#' + item).html('<i class="fa fa-plus"></i>')
+                    }
+                } else {
+                    $('#' + item).html('<i class="fa fa-plus"></i>')
+                }
+            });
+        }
+
+        function checkCertificateEligibility() {
+            $('#lesson_list_area').hide();
+            $('#lesson_list_loader').show();
+            let ids = '26';
+            /*addons/certificate/check_certificate_eligibility/'.$course_id);*/
+            $.ajax({
+                url: '',
+                type: 'POST',
+                data: {
+                    pro: 'lecciones',
+                    op: 'check_course_progress',
+                    id: ids
+                },
+                success: function(response) {
+                    if (parseInt(response) === 1) {
+                        $('#download_certificate_area').show();
+                        $('#certificate-alert-success').show();
+                        $('#certificate-alert-warning').hide();
+
+                    }
+                    checkCourseProgression();
+
+                    $('#lesson_list_area').show();
+                    $('#lesson_list_loader').hide();
+                }
+            });
+        }
+
+        function checkCourseProgression() {
+            /*home/check_course_progress/'.*/
+            let ids = '26';
+            $.ajax({
+                url: '',
+                type: 'POST',
+                data: {
+                    pro: 'lecciones',
+                    op: 'check_course_progress',
+                    id: ids
+                },
+                success: function(response) {
+                    console.log(response);
+                    if (parseInt(response) === 100) {
+                        $('#download_certificate_area').show();
+                        $('#certificate-alert-success').show();
+                        $('#certificate-alert-warning').hide();
+                    } else {
+                        $('#download_certificate_area').hide();
+                        $('#certificate-alert-success').hide();
+                        $('#certificate-alert-warning').show();
+                    }
+                    $('#progression').text(Math.round(response));
+                    $('#course_progress_area').attr('data-percent', Math.round(response));
+                    initProgressBar(Math.round(response));
+                }
+            });
+        }
+
+        function initProgressBar(dataPercent) {
+            $('#course_progress_area').html(`<div class="progress-circle progress-${dataPercent}"><span>${dataPercent}</span></div>`);
+        }
+
+        function getCertificateShareableUrl() {
+            var user_id = '31';
+            var course_id = '26';
+            /*addons/certificate/get_certificate_url*/
+            $.ajax({
+                url: '',
+                type: 'POST',
+                data: {
+                    pro: 'certificado',
+                    user_id: user_id,
+                    course_id: course_id
+                },
+                success: function(response) {
+                    console.log(response);
+                    if (response != 0) {
+                        window.location = response;
+                    }
+
+                }
+            });
+        }
+
+        function sendCourseCompletionMail() {
+            var user_id = '31';
+            var course_id = '26';
+            /*addons/certificate/send_course_completion_mail*/
+            $.ajax({
+                url: '',
+                type: 'POST',
+                data: {
+                    user_id: user_id,
+                    course_id: course_id
+                },
+                success: function(response) {
+                    console.log(response);
+                }
+            });
+        }
+    </script>
+    <!-- Course sections and lesson selector sidebar ends-->
+    </div>
+
+
+    <div class="row my-4">
+        <div class="col-lg-9">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <!-- <ul class="nav nav-tabs ">
+                                                    <li class="nav-item">
+                                <a class="nav-link remove-active active" id="qAndA" onclick="load_questions('26')" href="javascript:;"></a>
+                            </li>
+                                            </ul> -->
+                </div>
+                <!--cuerpo de carga con ajax para cualquier complemento. Primero cargue el complemento del foro del curso si sale o elseif-->
+                <div class="col-md-12 p-4" id="load-tabs-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://eduatec.com/assets/frontend/default/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://eduatec.com/assets/frontend/default/js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="https://eduatec.com/assets/frontend/default/js/popper.min.js"></script>
+    <script src="https://eduatec.com/assets/frontend/default/js/bootstrap.min.js"></script>
+    <script src="https://eduatec.com/assets/frontend/default/js/slick.min.js"></script>
+    <script src="https://eduatec.com/assets/frontend/default/js/select2.min.js"></script>
+    <script src="https://eduatec.com/assets/frontend/default/js/tinymce.min.js"></script>
+    <script src="https://eduatec.com/assets/frontend/default/js/multi-step-modal.js"></script>
+    <script src="https://eduatec.com/assets/frontend/default/js/jquery.webui-popover.min.js"></script>
+    <script src="https://content.jwplatform.com/libraries/O7BMTay5.js"></script>
+    <script src="https://eduatec.com/assets/frontend/default/js/main.js"></script>
+    <script src="https://eduatec.com/assets/global/toastr/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nestable2/1.6.0/jquery.nestable.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
+    <script src="https://eduatec.com/assets/frontend/default/js/bootstrap-tagsinput.min.js"></script>
+    <script src="https://eduatec.com/assets/frontend/default/js/custom.js"></script>
+    <script src="https://eduatec.com/assets/lessons/js/custom.js"></script>
+    <script>
+        function toggle_lesson_view() {
+            $('#lesson-container').toggleClass('justify-content-center');
+            $("#video_player_area").toggleClass("order-md-1");
+            $("#lesson_list_area").toggleClass("col-lg-5 order-md-1");
+        }
+    </script>
+    <script type="text/javascript">
+        //saving the current progress and starting from the saved progress
+        var newProgress;
+        var savedProgress;
+        var currentProgress = '1';
+        var lessonType = 'video';
+        var videoProvider = 'YouTube';
+
+        function markThisLessonAsCompleted(lesson_id) {
+            $('#lesson_list_area').hide();
+            $('#lesson_list_loader').show();
+            var progress;
+            if ($('input#' + lesson_id).is(':checked')) {
+                progress = 1;
+            } else {
+                progress = 0;
+            }
+            $.ajax({
+                type: 'POST',
+                url: '',
+                data: {
+                    pro: 'lecciones',
+                    op: 'save_course_progress',
+                    lesson_id: lesson_id,
+                    progress: progress
+                },
+                success: function(response) {
+                    currentProgress = response;
+                    $('#lesson_list_area').show();
+                    $('#lesson_list_loader').hide();
+                }
+            });
+        }
+
+
+        var timer = setInterval(function() {
+            console.log('Current Progress is ' + currentProgress);
+            if (lessonType == 'video' && videoProvider == 'html5' && currentProgress != 1) {
+                getCurrentTime();
+            }
+        }, 1000);
+
+        $(document).ready(function() {
+            if (lessonType == 'video' && videoProvider == 'html5') {
+                var totalDuration = document.querySelector('#player').duration;
+
+                if (currentProgress == 1 || currentProgress == totalDuration) {
+                    document.querySelector('#player').currentTime = 0;
+                } else {
+                    document.querySelector('#player').currentTime = currentProgress;
+                }
+            }
+        });
+        var counter = 0;
+        player.on('canplay', event => {
+            if (counter == 0) {
+                if (currentProgress == 1) {
+                    document.querySelector('#player').currentTime = 0;
+                } else {
+                    document.querySelector('#player').currentTime = currentProgress;
+                }
+            }
+            counter++;
+        });
+
+        function getCurrentTime() {
+            var lesson_id = '46';
+            newProgress = document.querySelector('#player').currentTime;
+            var totalDuration = document.querySelector('#player').duration;
+
+            console.log('Current Progress is ' + currentProgress);
+            console.log('New Progress is ' + newProgress);
+
+            if (newProgress != savedProgress && newProgress > 0 && currentProgress != 1) {
+
+                // if the user watches the entire video the lesson will be marked as seen automatically.
+                if (totalDuration == newProgress) {
+                    newProgress = 1;
+                    $('input#' + lesson_id).prop('checked', true);
+                }
+
+                // update the video prgress here.
+                $.ajax({
+                    type: 'POST',
+                    url: '',
+                    data: {
+                        pro: 'lecciones',
+                        op: 'save_course_progress',
+                        lesson_id: lesson_id,
+                        progress: newProgress
+                    },
+                    success: function(response) {
+                        savedProgress = response;
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>
